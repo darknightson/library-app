@@ -16,6 +16,9 @@ public class BookController {
 
     private final BookService bookService;
 
+    /*
+    책 정보 저장
+     */
     @PostMapping
     public ResponseEntity<Void> saveBook(@RequestBody BookCreateRequest bookCreateRequest) {
         bookService.saveBook(bookCreateRequest.getName());
