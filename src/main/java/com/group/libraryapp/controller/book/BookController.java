@@ -17,7 +17,7 @@ public class BookController {
     private final BookService bookService;
 
     /*
-    책 정보 저장
+    책 정보 저장 테스트 입니다.
      */
     @PostMapping
     public ResponseEntity<Void> saveBook(@RequestBody BookCreateRequest bookCreateRequest) {
